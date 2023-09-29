@@ -10,6 +10,9 @@ our @EXPORT = our @EXPORT_OK = grep {
 	*{$Aion::Spirit::{$_}}{CODE} && !/^(_|(NaN|import)\z)/n
 } keys %Aion::Spirit::;
 
+
+use Sub::Util qw//;
+
 #@category Аспект-ориентированное программирование
 
 # Оборачивает функции в пакете в указанную по регулярке. 
@@ -17,8 +20,6 @@ our @EXPORT = our @EXPORT_OK = grep {
 sub aroundsub($$;$) {
 	my ($pkg, $re, $around) = @_==3? @_: ((caller)[0], @_);
 	my $x = \%{"${pkg}::"};
-	
-	require Sub::Util;
 	
 	for my $g (values %$x) {
 		my $sub = *{$g}{CODE} or next;
