@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/darviarush/perl-aion-spirit/actions/workflows/test.yml/badge.svg)](https://github.com/darviarush/perl-aion-spirit/actions)
+[![Actions Status](https://github.com/darviarush/perl-aion-spirit/actions/workflows/test.yml/badge.svg)](https://github.com/darviarush/perl-aion-spirit/actions) [![MetaCPAN Release](https://badge.fury.io/pl/Aion-Spirit.svg)](https://metacpan.org/release/Aion-Spirit)
 # NAME
 
 Aion::Spirit - functions for controlling the program execution process
